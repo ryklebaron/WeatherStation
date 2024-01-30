@@ -18,6 +18,6 @@ def retrieve_buienradar():
 
 measurements = retrieve_buienradar()['actual']['stationmeasurements']
 for m in measurements:
-    print(f"{m['stationname']:<40},{m['regio']}")
+    print(m['stationname'],m['regio'])
 
 # print(retrieve_buienradar())
